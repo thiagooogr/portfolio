@@ -7,6 +7,7 @@ dependências.
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-00ff9c?style=for-the-badge&logo=githubpages)](https://thiagooogr.github.io/portfolio/)
 
 ## Sobre
 
@@ -48,9 +49,17 @@ python3 -m http.server 8080
 
 ## Publicando
 
-O repositório está em <https://github.com/thiagooogr/portfolio>. O site é hospedado
-com Cloudflare Pages a partir da branch `main` — cada `git push` dispara um deploy
-automático.
+O site está no ar em <https://thiagooogr.github.io/portfolio/> e o código em
+<https://github.com/thiagooogr/portfolio>.
+
+O deploy usa **GitHub Pages** direto da branch `main` (sem build step, sem Jekyll).
+A cada `git push` na `main` o GitHub republica o site automaticamente, em ~30s:
+
+```bash
+git add .
+git commit -m "minha alteracao"
+git push
+```
 
 ## Contato
 
