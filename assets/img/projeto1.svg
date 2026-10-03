@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00ff9c"/>
+      <stop offset="1" stop-color="#00e5ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="340" fill="#0e141b"/>
+  <rect x="16" y="16" width="568" height="308" rx="10" fill="none" stroke="#1e2a35" stroke-width="2"/>
+  <rect x="16" y="16" width="568" height="308" rx="10" fill="none" stroke="url(#g1)" stroke-width="2" opacity="0.25"/>
+  <path d="M60 240 L150 150 L230 200 L340 90 L430 160 L540 70" fill="none" stroke="url(#g1)" stroke-width="3"/>
+  <circle cx="150" cy="150" r="6" fill="#00ff9c"/>
+  <circle cx="340" cy="90" r="6" fill="#00e5ff"/>
+  <circle cx="540" cy="70" r="6" fill="#00ff9c"/>
+  <text x="300" y="300" font-family="monospace" font-size="16" text-anchor="middle" fill="#6b7f8e">projeto_01.png</text>
+</svg>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de desenvolvedor — HTML, CSS e JavaScript">
+  <title>dev::portfolio</title>
+  <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <canvas id="matrix"></canvas>
+
+  <header class="navbar">
+    <div class="navbar__inner container">
+      <a href="#hero" class="logo">
+        <img src="assets/img/logo.svg" alt="Logo" class="logo__img">
+        <span class="logo__text">&lt;Thiago_GR&gt;</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#sobre" class="nav__link">sobre</a>
+        <a href="#skills" class="nav__link">skills</a>
+        <a href="#projetos" class="nav__link">projetos</a>
+        <a href="#contato" class="nav__link">contato</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero__inner">
+        <p class="hero__tag">$ whoami</p>
+        <h1 class="hero__title glitch" data-text="Thiago Gusmão Rocha">Thiago Gusmão Rocha</h1>
+        <p class="hero__subtitle">
+          Desenvolvedor <span class="typed" id="typed"></span><span class="cursor">▌</span>
+        </p>
+        <p class="hero__desc">
+          "Transformo café em código e ideias em
+          interfaces web funcionais."
+        </p>
+        <div class="hero__actions">
+          <a href="#projetos" class="btn btn--primary">ver projetos</a>
+          <a href="#contato" class="btn btn--ghost">falar comigo</a>
+        </div>
+      </div>
+      <div class="container hero__terminal">
+        <div class="terminal">
+          <div class="terminal__bar">
+            <span class="terminal__dot"></span>
+            <span class="terminal__dot"></span>
+            <span class="terminal__dot"></span>
+            <span class="terminal__title">thiago@portfolio: ~</span>
+          </div>
+          <div class="terminal__body">
+            <p><span class="prompt">$</span> cat sobre.txt</p>
+            <p class="term-out">> estudante de html, css e javascript</p>
+            <p class="term-out">> apaixonado por tecnologia</p>
+            <p><span class="prompt">$</span> ./compilar-sonhos --modo=dev</p>
+            <p class="term-out">> status: <span class="ok">online</span> // em construção...</p>
+            <p><span class="prompt">$</span> <span class="term-cursor">▌</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2 class="section__title"><span class="hash">#</span> sobre</h2>
+        <div class="sobre__grid">
+          <img src="assets/img/avatar.webp" alt="Foto do Thiago" class="sobre__avatar">
+          <div class="sobre__text">
+            <p>
+              Desenvolvedor front-end em formação, de Campina Grande - PB. Comecei na web
+              com HTML e CSS e foi justamente aí que percebi que queria ir fundo — hoje é o
+              <strong>JavaScript</strong> que me mantém estudando todo dia.
+            </p>
+            <p>
+              Gosto de transformar ideias em interfaces que fazem sentido: código limpo,
+              detalhes que passam despercebidos e um terminal escuro sempre que possível.
+              Nos intervalos, fujo para o Git, o Linux e algum projeto pessoal sem prazo
+              de entrega.
+            </p>
+            <ul class="sobre__tags">
+              <li>html</li>
+              <li>css</li>
+              <li>javascript</li>
+              <li>linux</li>
+              <li>git</li>
+              <li>python</li>
+              <li>typescript</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title"><span class="hash">#</span> skills</h2>
+        <div class="skills__grid" id="skillsGrid">
+          <!-- preenchido via js/main.js -->
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="section">
+      <div class="container">
+        <h2 class="section__title"><span class="hash">#</span> projetos</h2>
+        <div class="projetos__grid">
+          <article class="card">
+            <img src="assets/img/projeto1.svg" alt="Projeto 1" class="card__img">
+            <div class="card__body">
+              <h3 class="card__title">Nome do Projeto</h3>
+              <p class="card__desc">Descrição curta do que o projeto faz e o que você aprendeu construindo ele.</p>
+              <div class="card__tags"><span>html</span><span>css</span><span>js</span></div>
+              <div class="card__links">
+                <a href="#" class="btn btn--small">demo</a>
+                <a href="#" class="btn btn--small btn--ghost">código</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/img/projeto2.svg" alt="Projeto 2" class="card__img">
+            <div class="card__body">
+              <h3 class="card__title">Nome do Projeto</h3>
+              <p class="card__desc">Descrição curta do que o projeto faz e o que você aprendeu construindo ele.</p>
+              <div class="card__tags"><span>html</span><span>css</span><span>js</span></div>
+              <div class="card__links">
+                <a href="#" class="btn btn--small">demo</a>
+                <a href="#" class="btn btn--small btn--ghost">código</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <img src="assets/img/projeto3.svg" alt="Projeto 3" class="card__img">
+            <div class="card__body">
+              <h3 class="card__title">Nome do Projeto</h3>
+              <p class="card__desc">Descrição curta do que o projeto faz e o que você aprendeu construindo ele.</p>
+              <div class="card__tags"><span>html</span><span>css</span><span>js</span></div>
+              <div class="card__links">
+                <a href="#" class="btn btn--small">demo</a>
+                <a href="#" class="btn btn--small btn--ghost">código</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title"><span class="hash">#</span> contato</h2>
+        <div class="contato__grid">
+          <form id="contactForm" class="form" novalidate>
+            <label class="form__label" for="nome">nome</label>
+            <input class="form__input" type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+            <label class="form__label" for="email">email</label>
+            <input class="form__input" type="email" id="email" name="email" placeholder="voce@exemplo.com" required>
+
+            <label class="form__label" for="mensagem">mensagem</label>
+            <textarea class="form__input" id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
+
+            <button type="submit" class="btn btn--primary">enviar</button>
+            <p class="form__status" id="formStatus"></p>
+          </form>
+          <div class="contato__info">
+            <p class="contato__line"><span class="hash">$</span> email: <a href="mailto:thiagogr@gmail.com">thiagogr@gmail.com</a></p>
+            <p class="contato__line"><span class="hash">$</span> github: <a href="https://github.com/thiagooogr" target="_blank" rel="noopener">github.com/thiagooogr</a></p>
+            <p class="contato__line"><span class="hash">$</span> linkedin: <a href="https://linkedin.com/in/thiagooogr" target="_blank" rel="noopener">in/thiagooogr</a></p>
+            <p class="contato__line"><span class="hash">$</span> local: Campina Grande - PB / BR</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Thiago Gusmão Rocha — feito com <span class="heart">♥</span> e muito café</p>
+    <p class="footer__ascii">[ root@portfolio:~$ ]</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
